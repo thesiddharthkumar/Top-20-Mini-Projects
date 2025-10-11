@@ -1,0 +1,183 @@
+:root {
+    --container-width: min(900px, 90%);
+    --primary: #8a2be2;
+    --primary-dark: #5f1d9e;
+    --secondary: #fff;
+    --bg-color: #f8f9fa;
+    --bg-darker: #e9ecef;
+    --text-color: #212529;
+    --text-lighter: #495057;
+    --card-bg: #ffffff;
+    --card-border: rgba(0, 0, 0, 0.08);
+    --input-bg: #ffffff;
+    --task-bg: #f1f3f5;
+    --task-hover: #e9ecef;
+    --checkbox-bg: rgba(0, 0, 0, 0.1);
+    --checkbox-hover: rgba(0, 0, 0, 0.2);
+    --text-muted: #6c757d;
+    --text-completed: #adb5bd;
+    --filter-active: rgba(138, 43, 226, 0.1);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --danger: #ff4d4d;
+    --success: #00b894;
+    --warning: #fdcb6e;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    --transition-fast: all 0.15s ease-out;
+    /* Confetti Colors */
+    --confetti-color-1: var(--primary);
+    --confetti-color-2: var(--secondary);
+    --confetti-color-3: #ff4d4d;
+    /* Red */
+    --confetti-color-4: #fdcb6e;
+    /* Yellow */
+    --confetti-color-5: #00b894;
+    /* Green */
+}
+
+[data-theme="dark"] {
+    --primary: #8a2be2;
+    --primary-dark: #6a1fc1;
+    --secondary: #00c6fb;
+    --bg-color: #1a1b23;
+    --bg-darker: #15161e;
+    --text-color: #e9ecef;
+    --text-lighter: #adb5bd;
+    --card-bg: #252836;
+    --card-border: rgba(255, 255, 255, 0.08);
+    --input-bg: #2d303e;
+    --task-bg: #2d303e;
+    --task-hover: #353847;
+    --checkbox-bg: rgba(255, 255, 255, 0.1);
+    --checkbox-hover: rgba(255, 255, 255, 0.2);
+    --text-muted: #6c757d;
+    --text-completed: #6c757d;
+    --filter-active: rgba(138, 43, 226, 0.2);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Color Themes */
+[data-color-theme="purple-blue"] {
+    --primary: #8a2be2;
+    --primary-dark: #5f1d9e;
+    --secondary: #ffffff;
+    --filter-active: rgba(138, 43, 226, 0.1);
+    --confetti-color-1: #8a2be2;
+    --confetti-color-2: #00c6fb;
+}
+
+[data-color-theme="red-yellow"] {
+    --primary: #ff4d4d;
+    --primary-dark: #cc3d3d;
+    --secondary: #ffffff;
+    --filter-active: rgba(255, 77, 77, 0.1);
+    --confetti-color-1: #ff4d4d;
+    --confetti-color-2: #fdcb6e;
+}
+
+[data-color-theme="green-blue"] {
+    --primary: #00b894;
+    --primary-dark: #008f73;
+    --secondary: #ffff;
+    --filter-active: rgba(0, 184, 148, 0.1);
+    --confetti-color-1: #00b894;
+    --confetti-color-2: #0984e3;
+}
+
+[data-color-theme="purple-pink"] {
+    --primary: #6c5ce7;
+    --primary-dark: #5649d2;
+    --secondary: #ffff;
+    --filter-active: rgba(108, 92, 231, 0.1);
+    --confetti-color-1: #6c5ce7;
+    --confetti-color-2: #fd79a8;
+}
+
+[data-color-theme="orange-yellow"] {
+    --primary: #e17055;
+    --primary-dark: #c45a40;
+    --secondary: #ffff;
+    --filter-active: rgba(225, 112, 85, 0.1);
+    --confetti-color-1: #e17055;
+    --confetti-color-2: #fdcb6e;
+}
+
+[data-color-theme="black-white"] {
+    --primary: #000000;
+    --primary-dark: #333333;
+    --secondary: #ffffff;
+    --filter-active: rgba(0, 0, 0, 0.1);
+    --confetti-color-1: #000000;
+    --confetti-color-2: #ffffff;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"][data-color-theme="purple-blue"] {
+    --filter-active: rgba(138, 43, 226, 0.2);
+}
+
+[data-theme="dark"][data-color-theme="red-yellow"] {
+    --filter-active: rgba(255, 77, 77, 0.2);
+}
+
+[data-theme="dark"][data-color-theme="green-blue"] {
+    --filter-active: rgba(0, 184, 148, 0.2);
+}
+
+[data-theme="dark"][data-color-theme="purple-pink"] {
+    --filter-active: rgba(108, 92, 231, 0.2);
+}
+
+[data-theme="dark"][data-color-theme="orange-yellow"] {
+    --filter-active: rgba(225, 112, 85, 0.2);
+}
+
+[data-theme="dark"][data-color-theme="black-white"] {
+    --primary: #ffffff;
+    --primary-dark: #cccccc;
+    --secondary: #000000;
+    --filter-active: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    line-height: 1.6;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+main {
+    width: 100%;
+    min-height: 600px;
+    max-width: var(--container-width);
+    border-radius: var(--border-radius);
+    background: var(--card-bg);
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    overflow-x: hidden;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+/* === Starting ===  */
+
+/* Header */
+
+/*  ==== END ====  */

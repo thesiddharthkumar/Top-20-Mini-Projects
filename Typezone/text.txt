@@ -1,0 +1,137 @@
+// Sample texts for different languages and difficulties
+
+
+const sampleTexts = {
+    english: {
+        easy: [
+            "The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet.",
+            "Programming is fun and challenging. It helps develop problem solving skills and logical thinking.",
+            "Practice makes perfect. Keep typing regularly to improve your speed and accuracy over time."
+        ],
+        medium: [
+            "JavaScript is a versatile programming language that powers the modern web. It runs in browsers and servers. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet.",
+            "Typing speed is measured in words per minute. Accuracy is equally important for effective communication.",
+            "Responsive web design ensures that websites look good on all devices from desktops to mobile phones."
+        ],
+        hard: [
+            "JavaScript is a versatile programming language that powers the modern web. It runs in browsers and servers. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. Algorithmic complexity analysis helps developers understand how efficient their code will perform at scale. ",
+            "Cryptographic protocols secure digital communications by encrypting sensitive information during transmission. JavaScript is a versatile programming language that powers the modern web. It runs in browsers and servers. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. ",
+            "Quantum computing represents a paradigm shift in computational theory, leveraging quantum mechanical phenomena. JavaScript is a versatile programming language that powers the modern web. It runs in browsers and servers. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. Algorithmic complexity analysis helps developers understand how efficient their code will perform at scale. JavaScript is a versatile programming language that powers the modern web. It runs in browsers and servers. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. Algorithmic complexity analysis helps developers understand how efficient their code will perform at scale. JavaScript is a versatile programming language that powers the modern web. It runs in browsers and servers. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. The quick brown fox jumps over the lazy dog. This sentence contains all letters of the alphabet. Algorithmic complexity analysis helps developers understand how efficient their code will perform at scale. "
+        ],
+        expert: [
+            "The juxtaposition of postmodern architectural elements with classical motifs creates intriguing spatial dynamics that challenge conventional design paradigms.",
+            "Neuroplasticity demonstrates the brain's remarkable capacity to reorganize synaptic connections in response to learning and environmental stimuli.",
+            "Epistemological frameworks underpin scientific methodologies, establishing rigorous parameters for empirical validation and theoretical substantiation."
+        ]
+    },
+    hindi: {
+        easy: [
+            "मैं एक छोटा सा वाक्य लिख रहा हूँ। यह हिंदी भाषा का अभ्यास है।",
+            "टाइपिंग सीखना बहुत जरूरी है। इससे काम करने की गति बढ़ती है।",
+            "कंप्यूटर आधुनिक जीवन का महत्वपूर्ण हिस्सा बन गया है।"
+        ],
+        medium: [
+            "प्रोग्रामिंग भाषाएं सीखने से तार्किक सोच का विकास होता है और समस्या समाधान कौशल में सुधार आता है।",
+            "भारत विविधताओं से भरा देश है जहाँ अलग-अलग संस्कृतियाँ और भाषाएँ पाई जाती हैं।",
+            "डिजिटल साक्षरता आज के युग में एक आवश्यक कौशल बन गया है जो हर किसी के लिए जरूरी है।"
+        ],
+        hard: [
+            "कृत्रिम बुद्धिमत्ता और मशीन लर्निंग तकनीकों ने आधुनिक तकनीकी क्रांति में महत्वपूर्ण भूमिका निभाई है।",
+            "जैव प्रौद्योगिकी के क्षेत्र में हुए अनुसंधानों ने चिकित्सा विज्ञान में क्रांतिकारी परिवर्तन ला दिए हैं।",
+            "ब्रह्मांड की उत्पत्ति और विकास को समझने के लिए वैज्ञानिक निरंतर शोध और अवलोकन कर रहे हैं।"
+        ],
+        expert: [
+            "दार्शनिक दृष्टिकोण से देखें तो ज्ञानमीमांसा और तर्कशास्त्र के बीच के अंतर्संबंधों का गहन विश्लेषण आवश्यक हो जाता है।",
+            "साहित्यिक आलोचना में उत्तर-आधुनिकतावादी विमर्श ने पारंपरिक साहित्यिक मानदंडों को पुनर्परिभाषित कर दिया है।",
+            "मनोविज्ञान के क्षेत्र में संज्ञानात्मक विकास के सिद्धांतों ने मानव व्यवहार की जटिल प्रक्रियाओं को समझने में मदद की है।"
+        ]
+    },
+    spanish: {
+        easy: [
+            "El rápido zorro marrón salta sobre el perro perezoso. Esta oración contiene todas las letras del alfabeto.",
+            "Aprender a escribir rápido es muy útil. Mejora la productividad y la eficiencia en el trabajo.",
+            "La práctica constante es clave para mejorar cualquier habilidad, incluida la mecanografía."
+        ],
+        medium: [
+            "La programación de computadoras requiere pensamiento lógico y habilidades de resolución de problemas.",
+            "El diseño web responsive se ha convertido en un estándar esencial para el desarrollo moderno de sitios web.",
+            "Los avances tecnológicos han transformado radicalmente la forma en que nos comunicamos y trabajamos."
+        ],
+        hard: [
+            "La inteligencia artificial y el aprendizaje automático están revolucionando múltiples industrias y sectores económicos.",
+            "La ciberseguridad se ha vuelto primordial en la era digital para proteger la información sensible de usuarios.",
+            "Las energías renovables representan una solución sostenible frente a la crisis ambiental global actual."
+        ],
+        expert: [
+            "La fenomenología existencial explora la experiencia humana desde una perspectiva ontológica fundamental.",
+            "La epistemología constructivista cuestiona los paradigmas tradicionales del conocimiento científico objetivo.",
+            "La desconstrucción derrideana desafía las oposiciones binarias inherentes al pensamiento metafísico occidental."
+        ]
+    },
+    french: {
+        easy: [
+            "Le vif renard brun saute par-dessus le chien paresseux. Cette phrase contient toutes les lettres de l'alphabet.",
+            "Apprendre à taper rapidement est très utile. Cela améliore la productividad et l'efficacité en travail.",
+            "La pratique régulière est essentielle pour progresser dans n'importe quelle compétence, y compris la dactylographie."
+        ],
+        medium: [
+            "La programmation informatique nécessite une pensée logique et des compétences en résolution de problèmes.",
+            "Le design web responsive est devenu un standard essentiel pour le développement moderne de sites web.",
+            "Les progrès technologiques ont radicalement transformé notre façon de communiquer et de travailler."
+        ],
+        hard: [
+            "L'intelligence artificielle et l'apprentissage automatique révolutionnent de multiples industries et secteurs économiques.",
+            "La cybersécurité est devenue primordiale à l'ère numérique pour protéger les informations sensibles des utilisateurs.",
+            "Les énergies renouvelables représentent une solution durable face à la crise environnementale mondiale actuelle."
+        ],
+        expert: [
+            "La phénoménologie existentielle explore l'expérience humaine d'une perspective ontologique fondamentale.",
+            "L'épistémologie constructiviste remet en question les paradigmes traditionnels de la connaissance scientifique objective.",
+            "La déconstruction derridéenne défie les oppositions binaires inhérentes à la pensée métaphysique occidentale."
+        ]
+    },
+    german: {
+        easy: [
+            "Der schnelle braune Fuchs springt über den faulen Hund. Dieser Satz enthält alle Buchstaben des Alphabets.",
+            "Schnelles Tippen zu lernen ist sehr nützlich. Es verbessert die Produktivität und Effizienz bei der Arbeit.",
+            "Regelmäßiges Üben ist der Schlüssel zur Verbesserung jeder Fähigkeit, einschließlich des Tippens."
+        ],
+        medium: [
+            "Computerprogrammierung erfordert logisches Denken und Problemlösungsfähigkeiten.",
+            "Responsives Webdesign ist zu einem wesentlichen Standard für die moderne Website-Entwicklung geworden.",
+            "Technologische Fortschritte haben die Art und Weise, wie wir kommunizieren und arbeiten, radikal verändert."
+        ],
+        hard: [
+            "Künstliche Intelligenz und maschinelles Lernen revolutionieren multiple Industrien und Wirtschaftssektoren.",
+            "Cybersicherheit ist im digitalen Zeitalter von primärer Bedeutung, um sensible Benutzerinformationen zu schützen.",
+            "Erneuerbare Energien repräsentieren eine nachhaltige Lösung angesichts der aktuellen globalen Umweltkrise."
+        ],
+        expert: [
+            "Die existenzielle Phänomenologie erforscht die menschliche Erfahrung aus fundamentaler ontologischer Perspektive.",
+            "Die konstruktivistische Erkenntnistheorie hinterfragt traditionelle Paradigmen objektiver wissenschaftlicher Erkenntnis.",
+            "Die derridaische Dekonstruktion fordert die binären Oppositionen heraus, die dem westlichen metaphysischen Denken innewohnen."
+        ]
+    },
+    japanese: {
+        easy: [
+            "速い茶色の狐が怠惰な犬を飛び越えます。この文にはアルファベットのすべての文字が含まれています。",
+            "速くタイピングすることを学ぶことは非常に便利です。仕事の生産性と効率を向上させます。",
+            "定期的な練習は、タイピングを含むあらゆるスキルを向上させるための鍵です。"
+        ],
+        medium: [
+            "コンピュータプログラミングには論理的思考と問題解決能力が必要です。",
+            "レスポンシブウェブデザインは、現代のウェブサイト開発にとって不可欠な標準となっています。",
+            "技術の進歩は、私たちのコミュニケーションと仕事の方法を根本的に変えました。"
+        ],
+        hard: [
+            "人工知能と機械学習は、多数の産業と経済セクターに革命をもたらしています。",
+            "デジタル時代において、機密性の高いユーザー情報を保護するためにサイバーセキュリティが最重要となりました。",
+            "再生可能エネルギーは、現在の地球環境危機に対する持続可能な解決策を表しています。"
+        ],
+        expert: [
+            "実存現象学は、基本的な存在論的観点から人間の経験を探究します。",
+            "構築主義的認識論は、客観的科学知識の伝統的パラダイムに疑問を投げかけます。",
+            "デリダ的な脱構築は、西洋形而上学思考に内在する二項対立に挑戦します。"
+        ]
+    }
+};
