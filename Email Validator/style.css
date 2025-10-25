@@ -1,0 +1,53 @@
+:root {
+    --primary: #4361ee;
+    --primary-light: #4895ef;
+    --secondary: #3f37c9;
+    --success: #4CAF50;
+    --error: #f44336;
+    --warning: #ff8c00;
+    --success-light-bg: rgba(76, 175, 80, 0.1);
+    --error-light-bg: rgba(244, 67, 54, 0.1);
+    --success-light-border: rgba(76, 175, 80, 0.3);
+    --error-light-border: rgba(244, 67, 54, 0.3);
+
+    --dark: #212529;
+    --dark-light: #343a40;
+    --light: #f8f9fa;
+    --gray: #e9ecef;
+    --gray-dark: #adb5bd;
+    --radius: 12px;
+    --radius-card: 20px;
+    --radius-sm: 6px;
+    --shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 6px 10px -3px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Write a Code.... */
