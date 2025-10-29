@@ -37,5 +37,5 @@ Follow along step-by-step to build, test, and enhance your projects.
 
 ---
 
-**Created by [None Tech Developers](https://www.youtube.com/@NoneTechDevelopers)**  
+**Created by [None Tech Developers](https://nonetechdevelopers.vercel.app/)**  
 Building real-world projects for the next generation of web developers.
