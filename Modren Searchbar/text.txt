@@ -1,0 +1,58 @@
+const courseData = {
+        1: {
+            title: "Introduction to Web Design",
+            subtitle: "Learn the fundamentals of modern web design principles",
+            icon: "fa-file-alt",
+            overview: "This comprehensive course covers the essential principles of modern web design. You'll learn how to create visually appealing and user-friendly websites that work across all devices. From color theory and typography to layout design and user experience, this course provides a solid foundation for anyone interested in web design.",
+            features: [
+                "Responsive Design Principles",
+                "Color Theory & Typography",
+                "User Experience Fundamentals",
+                "Modern Design Tools",
+                "Accessibility Best Practices",
+                "Portfolio Project"
+            ]
+        },
+        2: {
+            title: "Data Analytics Course",
+            subtitle: "Master data analysis and visualization techniques",
+            icon: "fa-chart-line",
+            overview: "Dive into the world of data analytics with this comprehensive course. Learn how to collect, process, and analyze data to extract meaningful insights. You'll work with real-world datasets and learn to create compelling visualizations that tell a story with data.",
+            features: [
+                "Data Collection & Cleaning",
+                "Statistical Analysis Methods",
+                "Data Visualization Techniques",
+                "SQL & Database Fundamentals",
+                "Python for Data Analysis",
+                "Real-world Case Studies"
+            ]
+        },
+        3: {
+            title: "JavaScript Fundamentals",
+            subtitle: "Deep dive into JavaScript programming concepts",
+            icon: "fa-laptop-code",
+            overview: "Master the world's most popular programming language with this comprehensive JavaScript course. From basic syntax to advanced concepts like closures and prototypes, you'll build a solid foundation in JavaScript programming.",
+            features: [
+                "JavaScript Syntax & Basics",
+                "DOM Manipulation",
+                "Event Handling",
+                "Asynchronous JavaScript",
+                "ES6+ Features",
+                "Real Projects & Exercises"
+            ]
+        },
+        4: {
+            title: "UI/UX Design Principles",
+            subtitle: "Create beautiful and functional user interfaces",
+            icon: "fa-palette",
+            overview: "Learn how to design interfaces that users love. This course covers both UI (User Interface) and UX (User Experience) design principles, teaching you how to create digital products that are both beautiful and functional.",
+            features: [
+                "User Research Methods",
+                "Wireframing & Prototyping",
+                "Visual Design Principles",
+                "Interaction Design",
+                "Usability Testing",
+                "Design System Creation"
+            ]
+        }
+    };
