@@ -1,51 +1,31 @@
-const courseData = {
-        1: {
-            title: "Introduction to Web Design",
-            subtitle: "Learn the fundamentals of modern web design principles",
-            icon: "fa-file-alt",
-            overview: "This comprehensive course covers the essential principles of modern web design. You'll learn how to create visually appealing and user-friendly websites that work across all devices. From color theory and typography to layout design and user experience, this course provides a solid foundation for anyone interested in web design.",
-            features: [
-                "Responsive Design Principles",
-                "Color Theory & Typography",
-                "User Experience Fundamentals",
-                "Modern Design Tools",
-                "Accessibility Best Practices",
-                "Portfolio Project"
-            ]
-        },
-        2: {
-            title: "Data Analytics Course",
-            subtitle: "Master data analysis and visualization techniques",
-            icon: "fa-chart-line",
-            overview: "Dive into the world of data analytics with this comprehensive course. Learn how to collect, process, and analyze data to extract meaningful insights. You'll work with real-world datasets and learn to create compelling visualizations that tell a story with data.",
-            features: [
-                "Data Collection & Cleaning",
-                "Statistical Analysis Methods",
-                "Data Visualization Techniques",
-                "SQL & Database Fundamentals",
-                "Python for Data Analysis",
-                "Real-world Case Studies"
-            ]
-        },
-        3: {
-            title: "JavaScript Fundamentals",
-            subtitle: "Deep dive into JavaScript programming concepts",
+
+Data: 
+const searchData = [
+        {
+            id: 1,
+            title: "Web Development Fundamentals",
+            subtitle: "Complete guide to modern web development",
             icon: "fa-laptop-code",
-            overview: "Master the world's most popular programming language with this comprehensive JavaScript course. From basic syntax to advanced concepts like closures and prototypes, you'll build a solid foundation in JavaScript programming.",
+            tags: ["HTML", "CSS", "JavaScript"],
+            category: "course",
+            overview: "This comprehensive course covers the essential principles of modern web development. You'll learn how to create visually appealing and user-friendly websites that work across all devices. From HTML and CSS basics to advanced JavaScript frameworks, this course provides a solid foundation for anyone interested in web development.",
             features: [
-                "JavaScript Syntax & Basics",
-                "DOM Manipulation",
-                "Event Handling",
-                "Asynchronous JavaScript",
-                "ES6+ Features",
-                "Real Projects & Exercises"
+                "HTML5 & Semantic Markup",
+                "CSS3 & Flexbox/Grid Layouts",
+                "JavaScript Fundamentals",
+                "Responsive Design Principles",
+                "Frontend Frameworks (React, Vue)",
+                "Backend Development with Node.js"
             ]
         },
-        4: {
+        {
+            id: 2,
             title: "UI/UX Design Principles",
-            subtitle: "Create beautiful and functional user interfaces",
+            subtitle: "Learn principles of user interface and experience design",
             icon: "fa-palette",
-            overview: "Learn how to design interfaces that users love. This course covers both UI (User Interface) and UX (User Experience) design principles, teaching you how to create digital products that are both beautiful and functional.",
+            tags: ["Figma", "Design", "Prototyping"],
+            category: "course",
+            overview: "Master the art of creating beautiful and functional user interfaces. This course covers both UI (User Interface) and UX (User Experience) design principles, teaching you how to create digital products that users love.",
             features: [
                 "User Research Methods",
                 "Wireframing & Prototyping",
@@ -54,5 +34,141 @@ const courseData = {
                 "Usability Testing",
                 "Design System Creation"
             ]
+        },
+        {
+            id: 3,
+            title: "JavaScript Tutorial for Beginners",
+            subtitle: "Step-by-step guide to JavaScript programming",
+            icon: "fa-code",
+            tags: ["JavaScript", "Programming", "Beginner"],
+            category: "tutorial",
+            overview: "This tutorial is perfect for beginners who want to learn JavaScript from scratch. You'll start with the basics and gradually move to more advanced concepts with hands-on examples.",
+            features: [
+                "Variables and Data Types",
+                "Functions and Scope",
+                "DOM Manipulation",
+                "Event Handling",
+                "ES6+ Features",
+                "Project Building"
+            ]
+        },
+        {
+            id: 4,
+            title: "React Native Mobile Development",
+            subtitle: "Build cross-platform mobile applications with React Native",
+            icon: "fa-mobile-alt",
+            tags: ["React Native", "Flutter", "iOS", "Android"],
+            category: "tutorial",
+            overview: "Learn to build mobile applications for both iOS and Android platforms using React Native. This tutorial covers the fundamentals of mobile app development with popular frameworks and tools.",
+            features: [
+                "Mobile UI/UX Principles",
+                "Cross-Platform Development",
+                "Native vs Hybrid Apps",
+                "App Store Deployment",
+                "Performance Optimization",
+                "User Authentication & Data Storage"
+            ]
+        },
+        {
+            id: 5,
+            title: "Developer Resource Library",
+            subtitle: "Collection of essential resources for developers",
+            icon: "fa-book",
+            tags: ["Resources", "Tools", "Libraries"],
+            category: "resource",
+            overview: "A comprehensive collection of resources, tools, and libraries for developers of all skill levels. From code snippets to complete frameworks, find everything you need to boost your productivity.",
+            features: [
+                "Code Snippets Collection",
+                "Development Tools",
+                "Framework Documentation",
+                "API References",
+                "Best Practices Guides",
+                "Community Resources"
+            ]
+        },
+        {
+            id: 6,
+            title: "CSS Framework Comparison",
+            subtitle: "Detailed analysis of popular CSS frameworks",
+            icon: "fa-css3-alt",
+            tags: ["CSS", "Frameworks", "Comparison"],
+            category: "resource",
+            overview: "This resource provides a detailed comparison of the most popular CSS frameworks available today. Understand the pros and cons of each to make an informed decision for your projects.",
+            features: [
+                "Bootstrap vs Tailwind",
+                "Performance Analysis",
+                "Learning Curve Comparison",
+                "Customization Options",
+                "Community Support",
+                "Use Case Recommendations"
+            ]
+        },
+        {
+            id: 7,
+            title: "The Future of Web Development",
+            subtitle: "Exploring emerging trends and technologies",
+            icon: "fa-globe",
+            tags: ["Web Development", "Trends", "Future"],
+            category: "article",
+            overview: "This article explores the future of web development, covering emerging trends, technologies, and methodologies that are shaping the way we build for the web.",
+            features: [
+                "WebAssembly Applications",
+                "Progressive Web Apps (PWAs)",
+                "AI and Machine Learning Integration",
+                "Serverless Architecture",
+                "Web3 and Blockchain",
+                "Accessibility Innovations"
+            ]
+        },
+        {
+            id: 8,
+            title: "Optimizing Website Performance",
+            subtitle: "Best practices for faster loading websites",
+            icon: "fa-tachometer-alt",
+            tags: ["Performance", "Optimization", "SEO"],
+            category: "article",
+            overview: "Learn how to optimize your website for maximum performance. This article covers techniques and best practices to ensure your site loads quickly and provides a smooth user experience.",
+            features: [
+                "Image Optimization Techniques",
+                "Code Minification",
+                "Caching Strategies",
+                "CDN Implementation",
+                "Lazy Loading",
+                "Performance Monitoring Tools"
+            ]
+        },
+        {
+            id: 9,
+            title: "Python Data Analysis Course",
+            subtitle: "Master data analysis with Python and Pandas",
+            icon: "fa-chart-line",
+            tags: ["Python", "Data Analysis", "Pandas"],
+            category: "course",
+            overview: "Dive into the world of data analytics with this comprehensive course. Learn how to collect, process, and analyze data to extract meaningful insights using Python and Pandas.",
+            features: [
+                "Data Collection & Cleaning",
+                "Statistical Analysis Methods",
+                "Data Visualization Techniques",
+                "Pandas Library Mastery",
+                "Real-world Case Studies",
+                "Machine Learning Basics"
+            ]
+        },
+        {
+            id: 10,
+            title: "Git Version Control Tutorial",
+            subtitle: "Complete guide to Git and GitHub",
+            icon: "fa-code-branch",
+            tags: ["Git", "Version Control", "GitHub"],
+            category: "tutorial",
+            overview: "Master Git version control with this step-by-step tutorial. Learn how to track changes, collaborate with others, and manage your code effectively using Git and GitHub.",
+            features: [
+                "Basic Git Commands",
+                "Branching and Merging",
+                "Collaborative Workflows",
+                "GitHub Repository Management",
+                "Conflict Resolution",
+                "Best Practices"
+            ]
         }
-    };
+    ];
