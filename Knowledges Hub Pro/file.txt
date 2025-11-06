@@ -1,0 +1,179 @@
+======== HTML FILE: =========
+icons:
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="https://placehold.co/32x32/FFFFFF/000000?text=KH" type="image/x-icon">
+
+Header:
+    Knowledge Hub Pro
+    Advanced insights across web development, design, and digital innovation
+
+filter: 
+    All
+    Development
+    Design
+    Mobile
+    Marketing
+    Favorites
+
+
+API: 
+      const topics = [
+        {
+            id: 1,
+            title: "Web Development",
+            category: "development",
+            icon: "bi-code-slash",
+            badge: "essential",
+            content: [
+                "Web development involves building and maintaining websites. It includes aspects such as web design, web publishing, web programming, and database management.",
+                "Modern web development encompasses both client-side (frontend) and server-side (backend) programming, creating dynamic and responsive applications that serve millions of users worldwide.",
+                "Progressive Web Apps (PWAs) are becoming increasingly popular, offering native app-like experiences through web technologies."
+            ],
+            progress: 85,
+            favorite: false,
+            bookmarked: false,
+            lastAccessed: null
+        },
+        {
+            id: 2,
+            title: "Frontend Development",
+            category: "development",
+            icon: "bi-stack",
+            badge: "popular",
+            content: [
+                "Modern frontend development focuses on creating responsive, interactive user interfaces using technologies like HTML, CSS, JavaScript, and modern frameworks such as React, Vue, and Angular.",
+                "Frontend developers ensure optimal user experience across all devices and browsers while maintaining performance and accessibility standards.",
+                "New trends include micro-frontends, WebAssembly, and AI-powered UI components."
+            ],
+            progress: 70,
+            favorite: false,
+            bookmarked: false,
+            lastAccessed: null
+        },
+        {
+            id: 3,
+            title: "Backend Development",
+            category: "development",
+            icon: "bi-hdd-stack",
+            badge: "advanced",
+            content: [
+                "Server-side development handles business logic, database operations, and API creation. It ensures data security, server optimization, and seamless integration with frontend applications.",
+                "Backend technologies include Node.js, Python, PHP, Ruby, Java, and databases like MySQL, PostgreSQL, and MongoDB.",
+                "Serverless architectures and edge computing are transforming how backend systems are designed and deployed."
+            ],
+            progress: 60,
+            favorite: false,
+            bookmarked: false,
+            lastAccessed: null
+        },
+        {
+            id: 4,
+            title: "UI/UX Design",
+            category: "design",
+            icon: "bi-palette-fill",
+            badge: "creative",
+            content: [
+                "UI/UX design focuses on creating meaningful and relevant experiences for users. It combines interface design with user experience principles to build intuitive and engaging digital products.",
+                "Modern design tools like Figma, Adobe XD, and Sketch enable efficient creation of high-fidelity prototypes and collaborative design workflows.",
+                "Design systems and component libraries are becoming essential for maintaining consistency across large applications."
+            ],
+            progress: 75,
+            favorite: false,
+            bookmarked: false,
+            lastAccessed: null
+        },
+        {
+            id: 5,
+            title: "Mobile Development",
+            category: "mobile",
+            icon: "bi-phone",
+            badge: "trending",
+            content: [
+                "Mobile app development is the process of creating software applications that run on mobile devices. These applications can be pre-installed or downloaded from app stores.",
+                "Developers can choose between native development (iOS/Android), cross-platform frameworks (React Native, Flutter), or hybrid approaches depending on project requirements.",
+                "5G technology is enabling more complex mobile applications with real-time capabilities and enhanced AR/VR experiences."
+            ],
+            progress: 65,
+            favorite: false,
+            bookmarked: false,
+            lastAccessed: null
+        },
+        {
+            id: 6,
+            title: "Digital Marketing",
+            category: "marketing",
+            icon: "bi-clipboard-data-fill",
+            badge: "growth",
+            content: [
+                "Digital marketing encompasses all marketing efforts that use an electronic device or the internet to connect with customers where they spend much of their time: online.",
+                "Key channels include SEO, content marketing, social media marketing, email marketing, PPC advertising, and analytics to measure and optimize campaign performance.",
+                "AI-powered marketing automation and personalization are revolutionizing how brands connect with their audiences."
+            ],
+            progress: 55,
+            favorite: false,
+            bookmarked: false,
+            lastAccessed: null
+        },
+        {
+            id: 7,
+            title: "DevOps & Cloud",
+            category: "development",
+            icon: "bi-cloud-arrow-up",
+            badge: "advanced",
+            content: [
+                "DevOps practices combine software development and IT operations to shorten the systems development life cycle while delivering features, fixes, and updates frequently.",
+                "Cloud platforms like AWS, Azure, and Google Cloud provide scalable infrastructure for modern applications.",
+                "Infrastructure as Code (IaC) and containerization with Docker and Kubernetes are standard practices in modern DevOps."
+            ],
+            progress: 50,
+            favorite: false,
+            bookmarked: false,
+            lastAccessed: null
+        },
+        {
+            id: 8,
+            title: "Data Science",
+            category: "development",
+            icon: "bi-graph-up",
+            badge: "advanced",
+            content: [
+                "Data science combines domain expertise, programming skills, and knowledge of mathematics and statistics to extract meaningful insights from data.",
+                "Key technologies include Python, R, SQL, and machine learning libraries like TensorFlow and PyTorch.",
+                "Big data platforms and real-time analytics are enabling businesses to make data-driven decisions faster than ever."
+            ],
+            progress: 40,
+            favorite: false,
+            bookmarked: false,
+            lastAccessed: null
+        }
+    ];
+
+
+Accordion Item: 
+    <div class="accordion-header" id="acc-header-${topic.id}">
+        <h3>
+            <div class="accordion-icon-wrapper">
+                <i class="bi ${topic.icon}"></i>
+            </div>
+            ${topic.title}
+            <span class="accordion-badge ${topic.badge}">${topic.badge.charAt(0).toUpperCase() + topic.badge.slice(1)}</span>
+        </h3>
+        
+        <div class="accordion-actions">
+            <button class="action-btn bookmark ${isBookmarked ? 'active' : ''}" data-id="${topic.id}" title="Bookmark">
+                <i class="bi bi-bookmark${isBookmarked ? '-fill' : ''}"></i>
+            </button>
+            <button class="action-btn favorite ${isFavorite ? 'active' : ''}" data-id="${topic.id}" title="Favorite">
+                <i class="bi bi-star${isFavorite ? '-fill' : ''}"></i>
+            </button>
+            <button class="accordion-toggle" aria-expanded="false" aria-controls="acc-content-${topic.id}">
+                <i class="bi bi-chevron-down"></i>
+            </button>
+        </div>
+        </div>
+        <div class="accordion-content" id="acc-content-${topic.id}" role="region" aria-labelledby="acc-header-${topic.id}">
+            ${topic.content.map(p => `<p>${p}</p>`).join('')}
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: ${topic.progress}%"></div>
+            </div>
+        </div>
